@@ -50,7 +50,7 @@ def query_wubi(char):
     d = defaultdict(list)
     trs = tb.cssselect('tr')
 
-    # 前三个大写 后三个小写
+    # 取前三个
 
     tr86 = trs[0]
     tds= PyQuery(tr86).children('td')
@@ -97,5 +97,4 @@ def main():
 if __name__ == '__main__':
     # s = query_wubi('的')
     # print(s)
-
     main()

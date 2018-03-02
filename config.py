@@ -7,6 +7,10 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 
+WUBI_USAUAL_PATH = 'wubi_unique_usual.json'
+
+WUBI_ALL_PATH = 'wubi_unique_all.json'
+
 def build_logger(name=None, level=logging.DEBUG, filename=None):
     
     # logging.basicConfig(level=level)

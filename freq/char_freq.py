@@ -8,7 +8,7 @@ from collections import OrderedDict
 import json
 
 
-df = pd.read_excel('CorpusCharacterlist.xls')
+df = pd.read_excel('../data/CorpusCharacterlist.xls')
 
 df.iloc[:, [3]].astype(float)
 x = df.iloc[:,[1,3]].to_records(index=False)
